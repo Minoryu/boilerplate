@@ -1,2 +1,2 @@
 # boilerpalte
-kubernetes / raspberrypi / alpine / mongo / deno / ionic / angular
+raspberrypi / kubernetes / alpine / firestore / deno / ionic-angular / ipfs
