@@ -1,11 +1,8 @@
-#!/bin/sh
+#!/bin/bash
+source ./util/comments.sh
 
-source ./comments.sh
-comments "${BASH_SOURCE[0]##*/}\n let's go"
 
 if !(type "wakeonlan" > /dev/null 2>&1); then
-    apt-get install wakeonlan
+    comments "${BASH_SOURCE[0]##*/}" "let's go"
+    apt install wakeonlan
 fi
-
-
-

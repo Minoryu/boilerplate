@@ -1,12 +1,11 @@
-#!/bin/sh
+#!/bin/bash
+source ./util/comments.sh
+source ./node.install.sh
+source ./npm.install.sh
 
-source ./comments.sh
-comments "${BASH_SOURCE[0]##*/}\n let's go"
 
-if !(type "node" > /dev/null 2>&1); then
-    source ./node.install.sh
+if !(type "code-server" > /dev/null 2>&1); then
+    comments "${BASH_SOURCE[0]##*/}" "let's go"
+    npm install --global code-server
+    code-server --version
 fi
-
-npm install --global code-server
-code-server --version
-

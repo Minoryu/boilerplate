@@ -1,8 +1,8 @@
-#!/bin/sh
-source ./comments.sh
+#!/bin/bash
+source ./util/comments.sh
 
-comments "${BASH_SOURCE[0]##*/}\n let's go"
 
 if !(type "git" > /dev/null 2>&1); then
-    apt-get install -y git-all
+    comments "${BASH_SOURCE[0]##*/}" "let's go"
+    apt install git-all -y
 fi

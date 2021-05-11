@@ -1,10 +1,10 @@
-#!/bin/sh
-source ./comments.sh
+#!/bin/bash
+source ./util/comments.sh
 source ./curl.install.sh
 
-comments "${BASH_SOURCE[0]##*/}\n let's go"
 
 if !(type "docker" > /dev/null 2>&1); then
+    comments "${BASH_SOURCE[0]##*/}" "let's go"
     curl -sSL https://get.docker.com | sh
 fi
 

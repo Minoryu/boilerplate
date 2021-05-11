@@ -1,7 +1,9 @@
-#!/bin/sh
-source ./comments.sh
-comments "${BASH_SOURCE[0]##*/}\n let's go"
+#!/bin/bash
+source ./util/comments.sh
+
 
 if !(type "curl" > /dev/null 2>&1); then
-    apt-get install -y curl
+  comments "${BASH_SOURCE[0]##*/}" "let's go"
+  apt install curl -y
 fi
+

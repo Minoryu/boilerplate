@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 touch ~/motd.custom
 
@@ -55,4 +55,3 @@ EOD
 
 cp motd motd-`date "+%Y%m%d_%H%M%S"`.bak
 cp -f motd.custom motd
-

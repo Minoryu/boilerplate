@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 cat /proc/device-tree/model
 echo ""
