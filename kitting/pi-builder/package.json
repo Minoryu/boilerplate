@@ -1,0 +1,13 @@
+{
+  "name": "pi-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "./deploy.sh",
+    "help": "cat package.json | jq '.scripts'",
+    "example": "./deploy.sh ssid password directory {ex: /Volumes/boot}"
+  },
+  "author": "",
+  "license": "ISC"
+}
