@@ -9,8 +9,7 @@ var std = function (err, stdout, stderr) {
 
 
 var cmds = [
-  'mkdir boilerplate',
-  'git clone -b develop https://github.com/Minoryu/boilerplate.git ./boilerplate',
+  'echo "hello world! pi4"'
 ];
 
 cmds.forEach(command => exec('sudo ' + command, (err, stdout, stderr) => std(err, stdout, stderr)));
