@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "./deploy.sh",
-    "help": "cat package.json | jq '.scripts'",
-    "example": "./deploy.sh ssid password directory"
+    "start": "sudo ./entrypoint.sh",
+    "help": "cat package.json | jq '.scripts'"
   },
   "author": "",
   "license": "ISC"
