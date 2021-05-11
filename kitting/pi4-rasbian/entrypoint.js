@@ -1,3 +1,4 @@
+"use strict";
 const { exec } = require('child_process')
 
 var std = function (err, stdout, stderr) {
@@ -8,14 +9,8 @@ var std = function (err, stdout, stderr) {
 
 
 var cmds = [
-  'ls -la', //test
-  '../bin/test.sh',
-  '../bin/git.install.sh',
-  '../bin/node.install.sh',
-  'git clone -b develop https://github.com/Minoryu/boilerpalte.git',
-  '../bin/docker-compose.install.sh',
+  'mkdir boilerplate',
+  'git clone -b develop https://github.com/Minoryu/boilerplate.git ./boilerplate',
 ];
 
-
 cmds.forEach(command => exec('sudo ' + command, (err, stdout, stderr) => std(err, stdout, stderr)));
-
