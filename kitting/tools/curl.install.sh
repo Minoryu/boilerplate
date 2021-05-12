@@ -1,5 +1,5 @@
 #!/bin/bash
-source ./util/comments.sh
+source ./utils/comments.sh
 
 
 if !(type "curl" > /dev/null 2>&1); then

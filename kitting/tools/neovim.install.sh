@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ./util/comments.sh
+source ./utils/comments.sh
 source ./node.install.sh
 source ./rbenv.install.sh
 

@@ -1,5 +1,5 @@
 #!/bin/bash
-source ./util/comments.sh
+source ./utils/comments.sh
 
 
 if !(type "wakeonlan" > /dev/null 2>&1); then

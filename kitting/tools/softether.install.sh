@@ -1,5 +1,5 @@
 #!/bin/bash
-source ./util/comments.sh
+source ./utils/comments.sh
 
 
 comments "${BASH_SOURCE[0]##*/}" "let's go"

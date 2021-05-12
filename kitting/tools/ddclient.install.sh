@@ -1,5 +1,5 @@
 #!/bin/sh
-source ./util/comments.sh
+source ./utils/comments.sh
 
 # reference: https://qiita.com/gorohash/items/8287738ffe47ab52a36f
 # reference: https://support.google.com/domains/answer/6147083?hl=ja

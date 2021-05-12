@@ -1,5 +1,5 @@
 #!/bin/bash
-source ./util/comments.sh
+source ./utils/comments.sh
 source ./git.install.sh
 source ./docker.install.sh
 
