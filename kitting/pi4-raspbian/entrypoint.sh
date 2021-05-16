@@ -1,9 +1,11 @@
 #!/bin/bash
 source ../tools/utils/comments.sh
 source ../tools/utils/init.vimrc.sh
+source ../tools/utils/init.bashrc.sh
 
 comments "${BASH_SOURCE[0]##*/}" "let's go"
 
+LANGUAGE=en_US.UTF-8
 
 cd ../tools
 
@@ -15,7 +17,6 @@ if [ $hostname ]; then
 fi
 
 # enable locale en_US.UTF-8
-LANGUAGE=en_US.UTF-8
 sudo ./utils/toggle.comment-out.sh $LANGUAGE /etc/locale.gen
 sudo locale-gen $LANGUAGE
 sudo update-locale LANG=en_US.UTF-8
